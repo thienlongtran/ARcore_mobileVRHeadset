@@ -8,7 +8,8 @@
 	}
 
 	SubShader{
-        ZWrite Off
+        ZTest Always Cull Off ZWrite Off
+		Fog { Mode off }
 
 		Pass{
 			CGPROGRAM

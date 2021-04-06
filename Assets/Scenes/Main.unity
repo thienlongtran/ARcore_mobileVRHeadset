@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -998,8 +998,8 @@ MonoBehaviour:
   seeThroughCamera: {fileID: 1914245112}
   renderingCamera: {fileID: 2069872582}
   backgroundMaterial: {fileID: 2100000, guid: 1495c3ae84f8b4298bda7a8707e4225e, type: 2}
-  cameraManager: {fileID: 1914245117}
-  cameraBackground: {fileID: 1914245116}
+  cameraManager: {fileID: 0}
+  cameraBackground: {fileID: 0}
   debugBackgroundMaterial: {fileID: 2100000, guid: 2decce40e16d54b9084c7e8d6f94cffb,
     type: 2}
 --- !u!114 &1914245114
@@ -1015,7 +1015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Device: 0
-  m_PoseSource: 6
+  m_PoseSource: 2
   m_PoseProviderComponent: {fileID: 0}
   m_TrackingType: 0
   m_UpdateType: 0

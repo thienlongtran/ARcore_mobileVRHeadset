@@ -81,34 +81,6 @@ public sealed class SeeThroughController : MonoBehaviour {
         cameraManager.frameReceived += OnCameraFrameReceived;
     }
 
-    void OnGUI() {
-        const int labelHeight = 60;
-        const int sliderWidth = 200;
-        const int buttonSize = 80;
-        const int boundary = 20;
-        const float arFovIncrement = 0.001f;
-
-        GUI.skin.label.fontSize = GUI.skin.box.fontSize = GUI.skin.button.fontSize = 40;
-        GUI.skin.label.alignment = TextAnchor.MiddleLeft;
-
-        GUI.Label(new Rect(boundary, boundary, 400, labelHeight),
-                  $"AR FOV: {renderingCamera.fieldOfView:F3}");
-
-        if (GUI.Button(new Rect(boundary, boundary + labelHeight, buttonSize, buttonSize), "-")) {
-            renderingCamera.fieldOfView -= arFovIncrement;
-        }
-
-        renderingCamera.fieldOfView = GUI.HorizontalSlider(
-            new Rect(boundary + buttonSize, boundary + labelHeight, sliderWidth, labelHeight),
-            renderingCamera.fieldOfView, 35f, 42f);
-
-        if (GUI.Button(
-            new Rect(boundary + buttonSize + sliderWidth, boundary + labelHeight, buttonSize,
-                     buttonSize), "+")) {
-            renderingCamera.fieldOfView += arFovIncrement;
-        }
-    }
-
     #endregion
 
     #region Camera handling
